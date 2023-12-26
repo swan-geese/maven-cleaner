@@ -29,7 +29,7 @@
     <actions>
         <action id="MavenCleaner" class="io.github.swangeese.mavencleaner.MavenCleaner" text="MavenCleaner" description="Clean Maven Repository">
             <add-to-group group-id="ToolsMenu" anchor="first"/>
-            <keyboard-shortcut keymap="$default" first-keystroke="meta I"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta C"/>
         </action>
     </actions>
 </idea-plugin>
