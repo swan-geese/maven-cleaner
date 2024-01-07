@@ -15,10 +15,10 @@
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
     Clean up maven related jar version files that are not downloaded successfully.<br>
-    <em>1. 插件中心下载 Maven Cleaner 插件</em><br>
-    <em>2. Tools -> Maven Cleaner  或者使用快捷键 `Ctrl + Command + C`</em><br>
-    <em>3. 选择要清理的目录</em><br>
-    <em>4. 点击保存即可</em><br>
+    <em>1. Plugin Center Download Maven Cleaner plugin</em><br>
+    <em>2. Tools -> Maven Cleaner  Or Use a Shortcut Key `Ctrl + Command + C`</em><br>
+    <em>3. Select The Directory Want To Clean</em><br>
+    <em>4. Click Save</em><br>
   ]]></description>
 
     <!-- Product and plugin compatibility requirements.
