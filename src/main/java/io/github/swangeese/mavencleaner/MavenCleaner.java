@@ -1,11 +1,11 @@
 package io.github.swangeese.mavencleaner;
 
 import com.intellij.ide.util.PropertiesComponent;
-import com.intellij.internal.statistic.eventLog.util.StringUtil;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.ui.DialogWrapper;
 import com.intellij.openapi.ui.Messages;
+import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.Nullable;
 import javax.swing.JCheckBox;
 import javax.swing.JComponent;
@@ -66,7 +66,7 @@ public class MavenCleaner extends AnAction {
         String cachedPath = propertiesComponent.getValue(MAVEN_REPO_PATH_KEY);
         boolean alwaysUseSavedPath = propertiesComponent.getBoolean(ALWAYS_USE_SAVED_PATH_KEY, false);
 
-        if (alwaysUseSavedPath && !StringUtil.isEmptyOrSpaces(cachedPath)) {
+        if (alwaysUseSavedPath && !StringUtils.isEmpty(cachedPath)) {
             return cachedPath;
         } else {
             // 显示设置面板
@@ -90,7 +90,7 @@ public class MavenCleaner extends AnAction {
      * @return
      */
     public boolean cleanMavenRepository(String mavenRepoPath) {
-        if (StringUtil.isEmptyOrSpaces(mavenRepoPath)) {
+        if (StringUtils.isEmpty(mavenRepoPath)) {
             Messages.showErrorDialog("Maven Repository Path Is Empty.", "Error");
             return false;
         }
